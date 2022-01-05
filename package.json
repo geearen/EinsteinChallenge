@@ -1,0 +1,22 @@
+{
+  "name": "einsteinchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parseTool.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geearen/EinsteinChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geearen/EinsteinChallenge/issues"
+  },
+  "homepage": "https://github.com/geearen/EinsteinChallenge#readme",
+  "dependencies": {
+    "line-reader": "^0.4.0"
+  }
+}
