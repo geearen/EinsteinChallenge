@@ -9,13 +9,20 @@ function parseTool(data) {
     .split("\n")
     .filter((string) => string[0] != "#");
 
+  const cleanChunk = []
+  /* removes trailing spaces */
+  for(let i = 0; i < chunk.length; i++){
+    cleanChunk.push(chunk[i].replaceAll(' ', ''));
+  }
+
   const trueValue = new Set(["yes", "on", "true"]);
   const falseValue = new Set(["no", "off", "false"]);
   const dict = {};
-  for (let i = 0; i < chunk.length; i++) {
-    let eachLine = chunk[i].split("=");
+  
+  for (let i = 0; i < cleanChunk.length; i++) {
+    let eachLine = cleanChunk[i].split("=");
     let key = eachLine[0];
-    let dataValue = eachLine[1];
+    let dataValue = eachLine[1]
 
     if (!isNaN(parseFloat(dataValue))) {
       dict[key] = parseFloat(dataValue);
