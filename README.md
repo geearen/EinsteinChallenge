@@ -16,3 +16,15 @@ Please create a parsing tool that takes the example config file (provided below)
 7. Please include a short example usage of your code so we can see how you call it/etc.
 
 8. Push your work to a public git repository (github, bitbucket, etc) and send us the link.
+
+### To run the parsing tool
+In the terminal run
+```
+node parseTool.js
+```
+
+Example:
+![Screenshot](https://i.gyazo.com/079d922e13a551cff28e921680d22273.png)
+
+### To configure config file
+Locate and open config.txt file. Make changes and save. 
